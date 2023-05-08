@@ -1,0 +1,90 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	int choice,type1,type2,type3;
+	clrscr();
+
+	printf("press 1 for ENGLISH\n");
+	printf("press 2 for HINDI\n");
+	printf("press 3 for GUJRATI\n");
+
+	printf("enter your choice : ");
+	scanf("%d",&choice);
+
+	switch(choice)
+	{
+		case 1:
+			printf("press 1 for TOP-UP recharge.\n");
+			printf("press 2 for TALK-TIME recharge.\n");
+			printf("press 3 for PRE-PAID recharge.\n");
+
+			printf("enter your choice : ");
+			scanf("%d",&type1);
+
+			switch(type1)
+			{
+				case 1:
+					printf("you selected TOP-UP recharge.\n");
+					break;
+				case 2:
+					printf("you selected TALK-TIME recharge.\n");
+					break;
+				case 3:
+					printf("you selected PRE-PAID recharge.\n");
+					break;
+				default:
+					printf("invalid choice...");
+			}
+			break;
+		case 2:
+			printf("TOP-UP recharge karne ke liye 1 dabaye.\n");
+			printf("TALK-TIME recharge karne ke liye 2 dabaye.\n");
+			printf("PREPAID recharge karne ke liye 3 dabaye.\n");
+
+			printf("enter your choice : ");
+			scanf("%d",&type2);
+			switch(type2)
+			{
+				case 1:
+					printf("aapne TOP-UP recharge pasand kiya hai.\n");
+					break;
+				case 2:
+					printf("aapne TALK-TIME recharge pasand kiya hai.\n");
+					break;
+				case 3:
+					printf("aapne PREPAID recharge pasand kiya hai.\n");
+					break;
+				default:
+					printf("invalid choice...");
+			}
+			break;
+		case 3:
+			printf("TOP-UP recharge karva mate 1 dabavo.\n");
+			printf("TALK-TIME recharge karva mate 2 dabavo.\n");
+			printf("PREPAID recharge karva mate 3 dabavo.\n");
+
+			printf("enter your choice : ");
+			scanf("%d",&type3);
+			switch(type3)
+			{
+				case 1:
+					printf("tame TOP-UP recharge pasand karyu chhe.\n");
+					break;
+				case 2:
+					printf("tame TALK-TIME recharge pasand karyu chhe.\n");
+					break;
+				case 3:
+					printf("tame PREPAID recharge pasand karyu chhe.\n");
+					break;
+				default:
+					printf("invalid choice...");
+			}
+			break;
+		default:
+			printf("invalid choice...");
+			break;
+	}
+	getch();
+}
